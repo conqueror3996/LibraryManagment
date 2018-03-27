@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="284.0" prefWidth="433.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="librarymanagment.ui.addbook.AddBookController">
+   <children>
+      <VBox prefHeight="428.0" prefWidth="475.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="tensach" promptText="Tên sách">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="idsach" layoutX="20.0" layoutY="30.0" promptText="ID Sách">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tacgia" layoutX="10.0" layoutY="55.0" promptText="Tác giả">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="nxb" layoutX="10.0" layoutY="80.0" promptText="Nhà xuất bản">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="75.0" prefWidth="475.0">
+               <children>
+                  <Button fx:id="saveButton" mnemonicParsing="false" onAction="#addBook" prefHeight="75.0" prefWidth="203.0" stylesheets="@addbook.css" text="Lưu">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancel" prefHeight="96.0" prefWidth="231.0" stylesheets="@addbook.css" text="Hủy bỏ">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

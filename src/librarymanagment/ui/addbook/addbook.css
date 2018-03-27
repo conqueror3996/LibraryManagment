@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+.button {
+	-fx-background-color: #90CAF9;	
+}
+
+.button:hover{
+	-fx-background-color: #1976D2;		
+}
